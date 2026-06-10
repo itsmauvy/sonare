@@ -1,180 +1,228 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SONARE</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONARE - 공간을 완성하는 프리미엄 사운드</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="site-header" data-header>
+        <a class="brand" href="#" aria-label="SONARE home">
+            <img src="images/sonare logo 1.png" alt="SONARE">
+        </a>
 
-<header class="header">
-  <h1 class="logo">SONARE</h1>
+        <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" data-menu-toggle>
+            <span></span>
+            <span></span>
+        </button>
 
-  <nav class="nav">
-    <a href="#">회사소개</a>
-    <a href="#">제품소개</a>
-    <a href="#">매장안내</a>
-    <a href="#">고객센터</a>
-  </nav>
+        <nav class="main-nav" data-nav>
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li class="has-submenu">
+                    <a href="#">제품소개</a>
+                    <ul class="submenu">
+                        <li><a href="#">전체</a></li>
+                        <li><a href="#">사운드바</a></li>
+                        <li><a href="#">헤드폰</a></li>
+                        <li><a href="#">스피커</a></li>
+                        <li><a href="#">악세서리</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">매장안내</a></li>
+                <li class="has-submenu">
+                    <a href="#">고객센터</a>
+                    <ul class="submenu">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">자료실</a></li>
+                        <li><a href="#">자주묻는 질문</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
-  <div class="icons">
-    <span>⌕</span>
-    <span>♡</span>
-    <span>⌂</span>
-  </div>
-</header>
+        <div class="header-actions" aria-label="빠른 메뉴">
+            <button type="button" aria-label="검색"><img src="images/MagnifyingGlass.png" alt=""></button>
+            <button type="button" aria-label="마이페이지"><img src="images/User.png" alt=""></button>
+            <button type="button" aria-label="장바구니"><img src="images/Basket.png" alt=""></button>
+        </div>
+    </header>
 
-<section class="hero">
-  <div class="hero-text">
-    <span class="eyebrow">PREMIUM AUDIO REDEFINED</span>
-    <h2>공간을 완성하는<br><strong>프리미엄 사운드</strong></h2>
-    <p>모든 디테일에서 선명하게 전달되는<br>프리미엄 오디오의 새로운 기준.</p>
-    <a href="#" class="btn dark">제품 둘러보기 →</a>
-  </div>
-</section>
+    <main>
+        <section class="hero-section">
+            <img class="hero-bg" src="images/sonare hero 1.jpg" alt="SONARE 프리미엄 오디오 제품">
+            <div class="hero-copy">
+                <p class="eyebrow">PREMIUM AUDIO REDEFINED</p>
+                <h1>공간을 완성하는<br><strong>프리미엄 사운드</strong></h1>
+                <p>모든 디테일까지 선명하게 전달하는<br>프리미엄 오디오의 새로운 기준.</p>
+                <a class="solid-button" href="#">제품 둘러보기 <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
 
-<section class="products section">
-  <div class="section-title">
-    <span class="eyebrow">OFFLINE STORE</span>
-    <h2>당신에게 맞는<br><strong>완벽한 사운드</strong></h2>
-    <p>SONARE의 다양한 제품을 만나보세요.</p>
-  </div>
+        <section class="product-section section-pad">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow dark">OFFLINE STORE</p>
+                    <h2>당신에게 맞는<br><strong>완벽한 사운드</strong></h2>
+                    <p>SONARE의 다양한 제품을 만나보세요.</p>
+                </div>
+                <a class="line-button" href="#">전체 제품 보기 <span aria-hidden="true">→</span></a>
+            </div>
 
-  <div class="product-grid">
-    <div class="feature-card">
-      <span class="badge">BEST</span>
-      <h3>AUREX S1</h3>
-      <p>공간과 음악을 더욱 선명하게 완성하는 프리미엄 스피커</p>
-      <a href="#">자세히 보기 →</a>
-    </div>
+            <div class="product-grid">
+                <article class="featured-product">
+                    <div>
+                        <span>BEST</span>
+                        <h3>AUREX S1</h3>
+                        <p>정교한 저역 튜닝과 공간감으로 완성된 프리미엄 북쉘프 스피커</p>
+                    </div>
+                    <img src="images/aurex S1.png" alt="AUREX S1 스피커">
+                    <a href="#">자세히 보기 <span aria-hidden="true">→</span></a>
+                </article>
 
-    <div class="product-card">
-      <a href="#">자세히 보기 →</a>
-      <img src="./images/headphones.png" alt="headphones">
-      <h3>HEADPHONES</h3>
-      <p>헤드폰</p>
-    </div>
+                <article class="category-card">
+                    <a href="#">자세히 보기 <span aria-hidden="true">→</span></a>
+                    <img src="images/sonare headphone.png" alt="헤드폰">
+                    <h3>HEADPHONES</h3>
+                    <p>헤드폰</p>
+                </article>
+                <article class="category-card">
+                    <a href="#">자세히 보기 <span aria-hidden="true">→</span></a>
+                    <img src="images/sonare soundbar.png" alt="사운드바">
+                    <h3>SOUNDBAR</h3>
+                    <p>사운드바</p>
+                </article>
+                <article class="category-card">
+                    <a href="#">자세히 보기 <span aria-hidden="true">→</span></a>
+                    <img src="images/sonare accessory.png" alt="액세서리">
+                    <h3>ACCESSORIES</h3>
+                    <p>액세서리</p>
+                </article>
+            </div>
+        </section>
 
-    <div class="product-card">
-      <a href="#">자세히 보기 →</a>
-      <img src="./images/soundbar.png" alt="soundbar">
-      <h3>SOUNDBAR</h3>
-      <p>사운드바</p>
-    </div>
+        <section class="experience-section">
+            <div class="experience-inner">
+                <div class="experience-copy">
+                    <p class="eyebrow">SOUND EXPERIENCE</p>
+                    <h2>완벽한 사운드는<br>공간에서 완성됩니다</h2>
+                    <p>SONARE는 다양한 공간에 최적화된 사운드를 제안합니다. 감상실, 홈시어터, 상업공간과 호텔까지 공간별 청음 시스템을 경험해보세요.</p>
 
-    <div class="product-card">
-      <a href="#">자세히 보기 →</a>
-      <img src="./images/accessories.png" alt="accessories">
-      <h3>ACCESSORIES</h3>
-      <p>액세서리</p>
-    </div>
-  </div>
-</section>
+                    <div class="space-tabs" role="tablist" aria-label="공간 유형">
+                        <button class="is-active" type="button" data-space-tab="0">LIVING ROOM</button>
+                        <button type="button" data-space-tab="1">HOME THEATER</button>
+                        <button type="button" data-space-tab="2">COMMERCIAL</button>
+                        <button type="button" data-space-tab="3">HOTEL</button>
+                    </div>
 
-<section class="experience">
-  <div class="exp-inner">
-    <div class="exp-text">
-      <span class="eyebrow">SOUND EXPERIENCE</span>
-      <h2>완벽한 사운드는<br>공간에서 완성됩니다</h2>
-      <p>
-        SONARE는 단순한 오디오가 아니라 공간을 설계합니다.
-        공간의 무드와 사운드가 조화롭게 어우러지는 경험을 제공합니다.
-      </p>
+                    <div class="thumb-grid">
+                        <button class="is-active" type="button" data-space-thumb="images/sound experience grid1.jpg"><img src="images/sound experience grid1.jpg" alt="거실 오디오 공간"></button>
+                        <button type="button" data-space-thumb="images/sound experience grid2.jpg"><img src="images/sound experience grid2.jpg" alt="홈시어터 공간"></button>
+                        <button type="button" data-space-thumb="images/sound experience grid3.jpg"><img src="images/sound experience grid3.jpg" alt="상업 오디오 공간"></button>
+                        <button type="button" data-space-thumb="images/sound experience grid4.jpg"><img src="images/sound experience grid4.jpg" alt="호텔 라운지 공간"></button>
+                        <button type="button" data-space-thumb="images/sound experience grid5.jpg"><img src="images/sound experience grid5.jpg" alt="스튜디오 공간"></button>
+                        <button type="button" data-space-thumb="images/sound experience grid6.jpg"><img src="images/sound experience grid6.jpg" alt="프라이빗 청음실"></button>
+                    </div>
 
-      <div class="thumbs">
-        <img src="./images/room1.jpg" alt="">
-        <img src="./images/room2.jpg" alt="">
-        <img src="./images/room3.jpg" alt="">
-        <img src="./images/room4.jpg" alt="">
-        <img src="./images/room5.jpg" alt="">
-        <img src="./images/room6.jpg" alt="">
-      </div>
+                    <a class="dark-line-button" href="#">자세히 보기 <span aria-hidden="true">→</span></a>
+                </div>
 
-      <a href="#" class="btn outline">자세히 보기 →</a>
-    </div>
+                <div class="experience-visual">
+                    <img data-space-main src="images/sound experience rightimg.png" alt="SONARE 사운드 경험 공간">
+                    <div class="progress-line"><span></span></div>
+                </div>
+            </div>
+        </section>
 
-    <div class="exp-image">
-      <img src="./images/experience.jpg" alt="sound experience">
-      <div class="line"></div>
-    </div>
-  </div>
-</section>
+        <section class="store-section section-pad">
+            <div class="store-layout">
+                <div class="store-copy">
+                    <p class="eyebrow dark">OFFLINE STORE</p>
+                    <h2><strong>전국 SONARE</strong><br>공식 오프라인 매장</h2>
+                    <p>전국 주요 도시에 위치한 SONARE 공식 오프라인 매장에서 제품을 직접 경험하고 편안한 상담을 받아보세요.</p>
 
-<section class="store section">
-  <div class="store-text">
-    <span class="eyebrow">OFFLINE STORE</span>
-    <h2>전국 SONARE<br><strong>공식 오프라인 매장</strong></h2>
-    <p>
-      전국 주요 도시에 위치한 SONARE 공식 오프라인 매장에서
-      제품을 직접 경험하고 전문적인 상담을 받아보세요.
-    </p>
+                    <div class="service-grid">
+                        <article>
+                            <img src="images/Headset.png" alt="">
+                            <h3>전문 상담</h3>
+                            <p>전문 컨설턴트의 맞춤 상담</p>
+                        </article>
+                        <article>
+                            <img src="images/Waveform.png" alt="">
+                            <h3>제품 체험</h3>
+                            <p>다양한 제품 직접 체험</p>
+                        </article>
+                        <article>
+                            <img src="images/ShieldCheck.png" alt="">
+                            <h3>정품 보증</h3>
+                            <p>공식 제품 및 A/S 지원</p>
+                        </article>
+                    </div>
 
-    <div class="service-grid">
-      <div>
-        <span>🎧</span>
-        <h4>전문 상담</h4>
-        <p>전문 스태프의 제품 상담</p>
-      </div>
-      <div>
-        <span>▥</span>
-        <h4>제품 체험</h4>
-        <p>다양한 제품 직접 체험</p>
-      </div>
-      <div>
-        <span>▣</span>
-        <h4>정품 보증</h4>
-        <p>공식 정품 및 A/S 지원</p>
-      </div>
-    </div>
+                    <div class="store-buttons">
+                        <a class="gold-button" href="#">매장 찾기</a>
+                        <a class="white-button" href="#">상담 문의</a>
+                    </div>
+                </div>
+                <img class="store-photo" src="images/offline store img.jpg" alt="SONARE 오프라인 매장">
+            </div>
 
-    <div class="btn-row">
-      <a href="#" class="btn beige">매장 찾기</a>
-      <a href="#" class="btn light">상품 문의</a>
-    </div>
-  </div>
+            <div class="bottom-layout">
+                <section class="news-section">
+                    <p class="eyebrow dark">SONARE INSIGHTS</p>
+                    <p class="muted">소나레에 대한<br>새로운 소식을 확인해보세요</p>
+                    <div class="news-head">
+                        <h2>공지사항 &amp; 뉴스</h2>
+                        <a href="#">더보기</a>
+                    </div>
+                    <ul class="news-list">
+                        <li><span>공지</span><a href="#">2026년 설연휴 고객센터 운영안내</a><time datetime="2026-01-24">2026-01-24</time></li>
+                        <li><span>뉴스</span><a href="#">SONARE 공식 쇼룸 오픈 안내</a><time datetime="2025-12-25">2025-12-25</time></li>
+                        <li><span>이벤트</span><a href="#">소음 방문 고객 대상 이벤트</a><time datetime="2025-10-05">2025-10-05</time></li>
+                        <li><span>가이드</span><a href="#">홈 오디오 시스템 선택 가이드</a><time datetime="2025-09-20">2025-09-20</time></li>
+                        <li><span>소식</span><a href="#">SONARE AUREX S1 개발 스토리</a><time datetime="2025-08-08">2025-08-08</time></li>
+                    </ul>
+                </section>
 
-  <img class="store-img" src="./images/store.jpg" alt="store">
-</section>
+                <aside class="consult-card">
+                    <img src="images/offline store img.jpg" alt="">
+                    <div>
+                        <p class="eyebrow">CONSULTATION</p>
+                        <h2>당신의 공간에 맞는<br>최적의 사운드를 제안합니다.</h2>
+                        <ul>
+                            <li><img src="images/Phone.png" alt="">031.767.2266</li>
+                            <li><img src="images/EnvelopeSimple.png" alt="">sound@sonare.kr</li>
+                            <li><img src="images/Clock.png" alt="">평일 10:00 ~ 18:00</li>
+                        </ul>
+                        <a class="gold-button" href="#">온라인 견적 신청 <span aria-hidden="true">→</span></a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
 
-<section class="news section">
-  <div class="news-left">
-    <span class="eyebrow">SONARE INSIGHTS</span>
-    <p>소나레에 대한<br>새로운 소식을 확인해보세요</p>
-    <h2>공지사항 & 뉴스</h2>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <img src="images/sonare logo 1.png" alt="SONARE">
+                <p>상호: 주식회사 | 대표: 마유비 | 이메일: sound@sonare.kr | 전화: 031-767-2266</p>
+                <p>주소: 경기 광주시 오포읍 오포로859번길 | 사업자등록번호: 215-86-58068</p>
+                <p>통신판매업신고번호: 제2010-경기광주-0458호 | 개인정보관리책임자: 조우수</p>
+                <p>COPYRIGHT 2026 SONARE. All right reserved.</p>
+            </div>
+            <nav aria-label="푸터 메뉴">
+                <a href="#">회사소개</a>
+                <a href="#">이용안내</a>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+            </nav>
+        </div>
+    </footer>
 
-    <ul class="news-list">
-      <li><span>공지</span> 2026년 AUREX 그래비티 업데이트 <em>2026-01-24</em></li>
-      <li><span>뉴스</span> SONARE 공식 쇼룸 오픈 안내 <em>2025-12-25</em></li>
-      <li><span>이벤트</span> 소음 없는 고객 대상 이벤트 <em>2025-10-05</em></li>
-      <li><span>가이드</span> 홈 오디오 시스템 선택 가이드 <em>2025-09-20</em></li>
-      <li><span>소식</span> SONARE AUREX S1 개발 스토리 <em>2025-07-30</em></li>
-    </ul>
-  </div>
-
-  <div class="consult">
-    <h3>당신의 공간에 맞는<br>최적의 사운드를 제안합니다.</h3>
-    <p>031.767.2266</p>
-    <p>sound@sonare.kr</p>
-    <p>평일 10:00 ~ 18:00</p>
-    <a href="#" class="btn beige">온라인 견적 신청 →</a>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="footer-logo">SONARE</div>
-  <div class="footer-menu">
-    <a href="#">회사소개</a>
-    <a href="#">이용안내</a>
-    <a href="#">이용약관</a>
-    <a href="#">개인정보처리방침</a>
-  </div>
-  <p>
-    상호 주식회사 소나레 | 대표 이지현 | 이메일 sound@sonare.kr<br>
-    주소 경기 광주시 오포읍 양벌로 | 사업자등록번호 215-86-58068<br>
-    COPYRIGHT© 2026 SONARE. All rights reserved.
-  </p>
-</footer>
-
+    <script src="js/main.js"></script>
 </body>
 </html>
