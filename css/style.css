@@ -67,7 +67,7 @@ img {
 }
 
 .brand {
-    width: 92px;
+    width: 132px;
 }
 
 .brand img {
@@ -399,16 +399,25 @@ p {
 
 .category-card > a {
     position: absolute;
-    top: 22px;
-    left: 24px;
-    color: #8b8b8b;
+    top: 28px;
+    left: 32px;
+    color: #555;
     font-size: 14px;
+    font-weight: 600;
+    opacity: 1;
+    transform: none;
+    transition: color .2s ease;
+}
+
+.category-card:hover > a,
+.category-card:focus-within > a {
+    color: var(--gold-deep);
 }
 
 .category-card img {
     width: 100%;
     height: 178px;
-    margin: 18px auto 24px;
+    margin: 18px auto 38px;
     object-fit: contain;
 }
 
@@ -794,7 +803,7 @@ p {
     }
 
     .brand {
-        width: 74px;
+        width: 96px;
     }
 
     .menu-toggle {
